@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer base {
+    html {
+        /* background-color: #060606; */
+        font-family: Inter;
+    }
+}

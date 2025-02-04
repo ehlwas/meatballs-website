@@ -1,0 +1,40 @@
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../../public/assets/images/crt.gif');
+        mix-blend-mode: multiply;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset -50px 50px 120px 100px #000;
+    }
+
+    video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+.step-one {
+    .img-holder {
+        background: linear-gradient(114.93deg, rgba(255, 255, 255, 0.1) 5.62%, rgba(153, 153, 153, 0.1) 97.71%);
+    }
+}
