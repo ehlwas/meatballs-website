@@ -1,11 +1,11 @@
 import React from 'react'
-import RootLayout from './layout/RootLayout'
+import AfterApp from './AfterApp'
 
 function App() {
 
   return (
     <>
-      <RootLayout />
+      <AfterApp />
     </>
   )
 }
