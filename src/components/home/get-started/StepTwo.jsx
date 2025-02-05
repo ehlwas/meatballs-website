@@ -1,4 +1,4 @@
-import { ArrowLeft } from 'lucide-react'
+import { ArrowDown, ArrowLeft } from 'lucide-react'
 import React from 'react'
 import StepProgress from './StepProgress'
 import Image from '../../common/custom/Image'
@@ -35,7 +35,9 @@ const StepTwo = () => {
           color="cyan"
           speed="5s"
         >
-          Next
+          <div className='flex items-center gap-2'>
+            Next <ArrowDown />
+          </div>
         </StarBorder>
 
       </div>
