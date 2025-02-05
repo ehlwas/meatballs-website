@@ -12,7 +12,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url('../../public/assets/images/crt.gif');
+        background-image: url('/assets/images/crt.gif');
         mix-blend-mode: multiply;
     }
 
@@ -36,5 +36,24 @@
 .step-one {
     .img-holder {
         background: linear-gradient(114.93deg, rgba(255, 255, 255, 0.1) 5.62%, rgba(153, 153, 153, 0.1) 97.71%);
+    }
+}
+
+.step-two {
+    .get-started-dots {
+        .get-started-dot {
+            position: relative;
+            
+            &:not(:last-child)::before {
+                content: '';
+                position: absolute;
+                background-color: #fff;
+                height: 2px;
+                width: calc(var(--spacing) * 7);
+                left: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
     }
 }

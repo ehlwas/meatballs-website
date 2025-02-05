@@ -5,7 +5,7 @@ import StarBorder from '../../common/custom/reactbitsdev/button-star-border/Butt
 
 const StepOne = () => {
   return (
-    <section className='flex items-stretch justify-center dark:text-white step-one min-h-[50vh] max-w-[1600px] mx-auto'>
+    <section className='flex items-stretch justify-center min-h-[500px] step-one'>
       
       <div className="flex flex-col flex-1 items-center justify-center">
 
@@ -27,7 +27,7 @@ const StepOne = () => {
         
       </div>
 
-      <div className="flex-1 relative min-h-[50vh]">
+      <div className="flex-1 relative min-h-[500px]">
 
         <div className='p-2 rounded w-8/12 absolute top-5 left-10 img-holder'>
           <Image src='/assets/images/get-started/image-13.png' className="" />

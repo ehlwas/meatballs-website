@@ -10,7 +10,7 @@ const Header = () => {
   }
   
   return (
-    <div className='sticky top-0 z-50 bg-white/30 dark:bg-black/30'>
+    <div className='sticky top-0 z-50 bg-white/30 dark:bg-black/30 dark:hover:bg-black/80 transition duration-200'>
       <div className="flex justify-between items-center max-w-[1600px] mx-auto p-5 dark:text-white">
 
         <div onClick={toggleTheme}>MEATBALLS</div>

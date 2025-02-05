@@ -4,7 +4,7 @@ import StepTwo from './StepTwo'
 
 const GetStartedContainer = () => {
   return (
-    <div className='px-2'>
+    <div className='max-w-[1600px] mx-auto px-2 dark:text-white'>
       
       <StepOne />
 
