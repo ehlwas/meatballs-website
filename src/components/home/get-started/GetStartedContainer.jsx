@@ -8,7 +8,7 @@ const GetStartedContainer = () => {
   const sectionRef = useRef([])
   
   const handleScroll = (index) => {
-    sectionRef.current[index].scrollIntoView({ behavior: 'smooth' })
+    sectionRef.current[index].scrollIntoView({ behavior: 'smooth', block: 'nearest' })
   }
   
   return (
