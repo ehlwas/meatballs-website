@@ -3,13 +3,14 @@ import React from 'react'
 
 const StepProgress = ({
   label = '',
-  step = 1
+  step = 1,
+  handleScroll = () => {}
 }) => {
   
   return (
     <div className='flex items-center gap-8'>
       <div className='flex items-center gap-2'>
-        <ArrowLeft />
+        <ArrowLeft onClick={handleScroll} />
         <p>{label}</p>
       </div>
 

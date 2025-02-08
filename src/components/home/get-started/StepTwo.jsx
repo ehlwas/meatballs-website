@@ -3,46 +3,68 @@ import React from 'react'
 import StepProgress from './StepProgress'
 import Image from '../../common/custom/Image'
 import StarBorder from '../../common/custom/reactbitsdev/button-star-border/ButtonStarBorder'
+import SelectionCard from './SelectionCard'
 
-const StepTwo = () => {
+const cardData = [
+  {
+    key: 'light',
+    img: '/assets/images/get-started/t-light.png',
+    label: 'LIGHT',
+    labelColor: 'text-[#5E5E5E]',
+    desc: 'Bright and Classic with touch of your branding colors'
+  },
+  {
+    key: 'dark',
+    img: '/assets/images/get-started/t-dark.png',
+    labelColor: 'text-[#5E5E5E]',
+    label: 'DARK',
+    desc: 'Sleek and Modern with a touch of your branding colors'
+  },
+]
+
+const StepTwo = ({
+  handleScroll = () => {},
+}) => {
   return (
-    <section className='min-h-[50vh] step-two'>
+    <div className='min-h-[50vh] mb-20 step-two'>
       
-      <StepProgress label='Whats your ideal Visual Theme?' step={1} />
+      <StepProgress
+        label='Whats your ideal Visual Theme?'
+        step={1}
+        handleScrollUp={() => handleScroll(0)}
+      />
 
-      <div className='flex items-center gap-10'>
+      <div className='grid grid-cols-3 gap-10 mt-6'>
 
-        <div className='w-[400px] h-[250px] mt-6'>
-          <div className='relative'>
-            <Image src='/assets/images/get-started/t-light.png' className="w-full h-full object-cover rounded-lg" />
-            <h2 className='text-[#5E5E5E] absolute top-1/2 -translate-y-1/2 text-center w-full text-4xl tracking-widest font-bold'>LIGHT</h2>
-          </div>
-          <p className='text-sm text-center mt-2'>Bright and Classic with touch of your branding colors</p>
-        </div>
-
-        <div className='w-[400px] h-[250px] mt-6'>
-          <div className='relative'>
-            <Image src='/assets/images/get-started/t-dark.png' className="w-full h-full object-cover rounded-lg" />
-            <h2 className='text-[#5E5E5E] absolute top-1/2 -translate-y-1/2 text-center w-full text-4xl tracking-widest font-bold'>DARK</h2>
-          </div>
-          <p className='text-sm text-center mt-2'>Sleek and Modern with a touch of your branding colors</p>
-        </div>
-
+        {
+          cardData.map(item => {
+            const { key } = item
+            
+            return (
+              <SelectionCard key={key} data={item} />
+            )
+          })
+        }
         
-        <StarBorder
-          as="button"
-          className="custom-class"
-          color="cyan"
-          speed="5s"
-        >
-          <div className='flex items-center gap-2'>
-            Next <ArrowDown />
+        <div className="relative">
+          <div className='absolute top-1/2 -translate-y-1/2'>
+            <StarBorder
+              as="button"
+              className="custom-class"
+              color="cyan"
+              speed="5s"
+              onClick={() => handleScroll(2)}
+            >
+              <div className='flex items-center gap-2'>
+                Next <ArrowDown />
+              </div>
+            </StarBorder>
           </div>
-        </StarBorder>
+        </div>
 
       </div>
       
-    </section>
+    </div>
   )
 }
 

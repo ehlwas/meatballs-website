@@ -3,9 +3,11 @@ import Button from '../../common/custom/Button'
 import Image from '../../common/custom/Image'
 import StarBorder from '../../common/custom/reactbitsdev/button-star-border/ButtonStarBorder'
 
-const StepOne = () => {
+const StepOne = ({
+  handleScroll = () => {}
+}) => {
   return (
-    <section className='flex items-stretch justify-center min-h-[500px] step-one'>
+    <div className='flex items-stretch justify-center min-h-[500px] mb-20 step-one'>
       
       <div className="flex flex-col flex-1 items-center justify-center">
 
@@ -19,6 +21,7 @@ const StepOne = () => {
               className="custom-class"
               color="cyan"
               speed="5s"
+              onClick={() => handleScroll(1)}
             >
               Get Started
             </StarBorder>
@@ -39,7 +42,7 @@ const StepOne = () => {
       </div>
 
       
-    </section>
+    </div>
   )
 }
 
