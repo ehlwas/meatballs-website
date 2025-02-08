@@ -5,14 +5,18 @@ import StepThree from './StepThree'
 import StepFour from './StepFour'
 
 const GetStartedContainer = () => {
+  const containerRef = useRef(null)
   const sectionRef = useRef([])
   
   const handleScroll = (index) => {
-    sectionRef.current[index].scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+    containerRef.current.scrollTo({
+      top: sectionRef.current[index].offsetTop - containerRef.current.offsetTop, // Aligns to the top
+      behavior: 'smooth', 
+    })
   }
   
   return (
-    <div className='max-h-[50vh] max-w-[1600px] overflow-hidden mx-auto px-2 dark:text-white'>
+    <div ref={containerRef} className='max-h-[50vh] max-w-[1600px] overflow-hidden mx-auto px-2 dark:text-white'>
       
       <section ref={el => (sectionRef.current[0] = el)}>
         <StepOne 
