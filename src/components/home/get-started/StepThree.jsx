@@ -58,7 +58,7 @@ const StepThree = ({
 
             if (key === '-') {
               return (
-                <div></div>
+                <div key={key}></div>
               )
             }
             

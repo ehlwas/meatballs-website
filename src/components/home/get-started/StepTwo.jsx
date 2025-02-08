@@ -25,13 +25,14 @@ const cardData = [
 const StepTwo = ({
   handleScroll = () => {},
 }) => {
+  
   return (
     <div className='min-h-[50vh] mb-20 step-two'>
       
       <StepProgress
         label='Whats your ideal Visual Theme?'
         step={1}
-        handleScrollUp={() => handleScroll(0)}
+        handleScroll={() => handleScroll(0)}
       />
 
       <div className='grid grid-cols-3 gap-10 mt-6'>
