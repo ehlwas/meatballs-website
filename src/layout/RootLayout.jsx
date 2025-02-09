@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/header/Header'
 import LandingPage from '../pages/LandingPage'
 import Footer from '../components/footer/Footer'
-import Backgound from '../components/common/Backgound'
+import Background from '../components/common/Background'
 
 const RootLayout = () => {
   return (
@@ -11,7 +11,7 @@ const RootLayout = () => {
     >
       <Header />
 
-      <Backgound />
+      <Background />
       <div className="page-container">
         <LandingPage />
       </div>

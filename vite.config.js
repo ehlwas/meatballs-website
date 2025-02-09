@@ -8,4 +8,17 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    sourcemap: false,
+    sourcemapExcludeSources: true,
+    rollupOptions:{
+      output: {
+        entryFileNames: `assets/main.js`,
+        assetFileNames: `assets/main.[ext]`
+      }
+    }
+  },
+  css: {
+    devSourcemap: true // this one
+  }
 })
