@@ -2,11 +2,12 @@ import React from 'react'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Image from '../../common/custom/Image'
+import BackgroundVideo from '../../common/BackgroundVideo'
 
 const WorksContainer = () => {
   return (
-    <div className='text-white bg-black mt-20 p-20 overflow-hidden'>
-      
+    <div className='text-white mt-20 p-20 overflow-hidden relative'>
+
       <div className='text-right'>
         <h2 className='text-4xl font-extrabold mb-6'>Don’t just take our word for it</h2>
         <p>

@@ -5,7 +5,7 @@ import WhyContent from './WhyContent'
 
 const WhyContainer = () => {
   return (
-    <div className='bg-black text-white'>
+    <div className=' text-white'>
 
       <WhyBanner />
 

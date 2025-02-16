@@ -23,15 +23,15 @@ body {
         opacity: 0.5; // Add this line to set opacity
     }
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        box-shadow: inset -50px 50px 120px 100px #000;
-    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     box-shadow: inset -50px 50px 120px 100px #000;
+    // }
 
     video {
         width: 100vw;
@@ -95,22 +95,23 @@ body {
 }
 
 .why-content-wrapper {
-    background-image: url('/assets/images/why-section/bg-why.png');
+    // background-image: url('/assets/images/why-section/bg-why.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
+    background: transparent;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.7);
-    }
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background: rgba(0, 0, 0, 0.7);
+    // }
 
     .why-content {
         position: relative;

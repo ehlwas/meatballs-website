@@ -4,7 +4,7 @@ import TiltedCard from '../../common/custom/reactbitsdev/tilted-card/TiltedCard'
 
 const WhyBanner = () => {
   return (
-    <div className='relative'>
+    <div className='relative bg-black'>
       <div className='flex align-middle justify-center'>
         {/* <Image src='/assets/images/why-section/laptop.png' className='w-[730px]' /> */}
         <TiltedCard
