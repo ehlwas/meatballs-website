@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="relative bg-black border-t-1 border-[#5C5C5C] text-white py-10 px-6 md:px-16">
       
-      <div className="relative max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 z-1">
+      <div className="relative max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 z-1">
         <Image 
           src="/assets/images/footer/footer-bg.png"
-          className="absolute bottom-0 w-full left-1/2 -translate-x-1/2 opacity-15"
+          className="absolute bottom-0 w-full left-1/2 -translate-x-1/2 opacity-15 -z-1"
         />
         {/* Web Services */}
         <div>
@@ -37,7 +37,7 @@ const Footer = () => {
             <li className="mb-5">Logo Creation</li>
             <li className="mb-5">Logo Animation</li>
             <li className="mb-5">Promotional Poster/Banner</li>
-            <li className="mb-5">Brochure Design (1 Page, Bi-Fold, Tri-Fold)</li>
+            <li className="mb-5">Brochure Design<br /><span className="text-sm font-light">(1 Page, Bi-Fold / Tri-Fold)</span></li>
             <li className="mb-5">Catalog</li>
             <li className="mb-5">Product Photography</li>
             <li className="mb-5">Content Creation</li>
@@ -60,7 +60,9 @@ const Footer = () => {
             <li className="mb-5">Scheduling Software</li>
           </ul>
           <h3 className="text-sm font-light tracking-widest uppercase mt-14 mb-8">Stay Connected</h3>
-          <p>Email us at <a href="mailto:inquire.div@gmail.com" className="underline">inquire.div@gmail.com</a></p>
+          <ul className="space-y-2 font-light text-lg">
+            <li className="mb-5 ">Email us at <a href="mailto:inquire.div@gmail.com" className="font-medium">inquire.div@gmail.com</a></li>
+          </ul>
           <div className="flex space-x-4 mt-6">
             <RiFacebookCircleFill className="text-xl hover:text-gray-400 cursor-pointer" />
             <RiInstagramFill className="text-xl hover:text-gray-400 cursor-pointer" />
