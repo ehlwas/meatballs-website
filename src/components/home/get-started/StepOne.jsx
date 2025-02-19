@@ -20,7 +20,7 @@ const StepOne = ({
               as="button"
               className="custom-class"
               color="cyan"
-              speed="5s"
+              speed="4s"
               onClick={() => handleScroll(1)}
             >
               Get Started
