@@ -1,10 +1,16 @@
 import { PiRedditLogoFill } from "react-icons/pi";
 import { RiDiscordFill, RiFacebookCircleFill, RiInstagramFill, RiLinkedinFill, RiYoutubeFill } from "react-icons/ri";
+import Image from "../common/custom/Image";
 
 const Footer = () => {
   return (
-    <footer className="bg-black border-t-1 border-[#D9D9D9] text-white py-10 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="relative bg-black border-t-1 border-[#5C5C5C] text-white py-10 px-6 md:px-16">
+      
+      <div className="relative max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 z-1">
+        <Image 
+          src="/assets/images/footer/footer-bg.png"
+          className="absolute bottom-0 w-full left-1/2 -translate-x-1/2 opacity-15"
+        />
         {/* Web Services */}
         <div>
           <h3 className="text-sm font-light tracking-widest uppercase mb-8">Web Services</h3>
@@ -67,9 +73,10 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="text-center text-sm text-gray-500 mt-8 border-t border-gray-700 pt-4">
+      <div className="relative z-1 text-center text-sm text-gray-500 mt-8 pt-4">
         2025 | <span className="text-white font-bold">div.ae</span> | ALL RIGHTS RESERVED
       </div>
+
     </footer>
   );
 }

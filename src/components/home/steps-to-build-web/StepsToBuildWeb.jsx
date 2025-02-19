@@ -10,7 +10,7 @@ const StepsToBuildWeb = () => {
 
         <div className="w-[200px] px-6 pb-6 border-[#5C5C5C] border-l border-b border-r rounded-br-2xl rounded-bl-2xl">
           <h3
-            className='text-9xl font-black bg-[linear-gradient(180deg,#272727_0%,#434343_100%)] bg-clip-text text-transparent'
+            className='text-9xl font-black bg-[linear-gradient(180deg,#04AFBC_0%,#362F2F_100%)] bg-clip-text text-transparent'
           >
             1
           </h3>
@@ -25,7 +25,7 @@ const StepsToBuildWeb = () => {
 
         <div className="w-[200px] pr-6 pb-6 border-[#5C5C5C] border-b border-r rounded-br-2xl">
           <h3
-            className='text-9xl font-black bg-[linear-gradient(180deg,#272727_0%,#434343_100%)] bg-clip-text text-transparent'
+            className='text-9xl font-black bg-[linear-gradient(180deg,#04AFBC_0%,#362F2F_100%)] bg-clip-text text-transparent'
           >
             2
           </h3>
@@ -40,7 +40,7 @@ const StepsToBuildWeb = () => {
 
         <div className="w-[200px] pr-6 pb-6 border-[#5C5C5C] border-b border-r rounded-br-2xl">
           <h3
-            className='text-9xl font-black bg-[linear-gradient(180deg,#272727_0%,#434343_100%)] bg-clip-text text-transparent'
+            className='text-9xl font-black bg-[linear-gradient(180deg,#04AFBC_0%,#362F2F_100%)] bg-clip-text text-transparent'
           >
             3
           </h3>
@@ -55,7 +55,7 @@ const StepsToBuildWeb = () => {
 
         <div className="w-[200px] pr-6 pb-6 border-[#5C5C5C] border-b border-r rounded-br-2xl">
           <h3
-            className='text-9xl font-black bg-[linear-gradient(180deg,#272727_0%,#434343_100%)] bg-clip-text text-transparent'
+            className='text-9xl font-black bg-[linear-gradient(180deg,#04AFBC_0%,#362F2F_100%)] bg-clip-text text-transparent'
           >
             4
           </h3>
@@ -70,7 +70,7 @@ const StepsToBuildWeb = () => {
 
         <div className="w-[200px] pr-6 pb-6 border-[#5C5C5C] border-b border-r rounded-br-2xl">
           <h3
-            className='text-9xl font-black bg-[linear-gradient(180deg,#272727_0%,#434343_100%)] bg-clip-text text-transparent'
+            className='text-9xl font-black bg-[linear-gradient(180deg,#04AFBC_0%,#362F2F_100%)] bg-clip-text text-transparent'
           >
             5
           </h3>
