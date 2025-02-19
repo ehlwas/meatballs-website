@@ -64,12 +64,12 @@ const Footer = () => {
             <li className="mb-5 ">Email us at <a href="mailto:inquire.div@gmail.com" className="font-medium">inquire.div@gmail.com</a></li>
           </ul>
           <div className="flex space-x-4 mt-6">
-            <RiFacebookCircleFill className="text-xl hover:text-gray-400 cursor-pointer" />
-            <RiInstagramFill className="text-xl hover:text-gray-400 cursor-pointer" />
-            <RiLinkedinFill className="text-xl hover:text-gray-400 cursor-pointer" />
-            <PiRedditLogoFill className="text-xl hover:text-gray-400 cursor-pointer" />
-            <RiDiscordFill className="text-xl hover:text-gray-400 cursor-pointer" />
-            <RiYoutubeFill className="text-xl hover:text-gray-400 cursor-pointer" />
+            <RiFacebookCircleFill className="text-3xl hover:text-gray-400 cursor-pointer" />
+            <RiInstagramFill className="text-3xl hover:text-gray-400 cursor-pointer" />
+            <RiLinkedinFill className="text-3xl hover:text-gray-400 cursor-pointer" />
+            <PiRedditLogoFill className="text-3xl hover:text-gray-400 cursor-pointer" />
+            <RiDiscordFill className="text-3xl hover:text-gray-400 cursor-pointer" />
+            <RiYoutubeFill className="text-3xl hover:text-gray-400 cursor-pointer" />
           </div>
         </div>
       </div>
